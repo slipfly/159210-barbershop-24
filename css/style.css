@@ -15,6 +15,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 75px;
+}
+
 .inner-page {
   color: #000000;
 
@@ -29,16 +39,58 @@ a {
 }
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 285px;
+
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 
-  background-color: #000000;
+  background-color: transparent;
 }
 
-.site-navigation,
-.user-navigation {
+.main-header-logo {
+  order: 2;
+
+  width: 368px;
+  height: 153px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
+  background-color: #000000;
+
+  min-height: 70px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 620px;
+  padding: 0;
+  margin: 0;
+
   list-style: none;
+
+  min-height: 70px;
+}
+
+.user-navigation {
+  width: 140px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  min-height: 70px;
 }
 
 .site-navigation a,
@@ -53,11 +105,24 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 170px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .feature-item {
+  min-height: 170px;
+  width: 300px;
+
   text-align: center;
 }
 
@@ -67,6 +132,11 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  padding: 50px 80px;
+
   color: #000000;
 
   background: #f8f5f2;
@@ -80,12 +150,22 @@ a {
   line-height: 42px;
 }
 
+.news {
+  width: 380px;
+  min-height: 315px;
+}
+
 .news-list {
   list-style: none;
 }
 
 .news-item time {
   text-transform: none;
+}
+
+.gallery {
+  width: 300px;
+  min-height: 315px;
 }
 
 .gallery-content {
@@ -109,6 +189,14 @@ a {
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.contacts {
+  width: 380px;
+}
+
+.appointment {
+  width: 300px;
 }
 
 .appointment-item input {
@@ -238,12 +326,26 @@ a {
 }
 
 .main-footer {
+  margin-top: 65px;
+  min-height: 180px;
+  padding: 60px 0;
+
   color: #ffffff;
 
   background-color: #212121;
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -257,6 +359,7 @@ a {
 }
 
 .footer-social {
+  width: 145px;
   text-align: center;
 }
 
@@ -269,6 +372,10 @@ a {
 }
 
 .footer-copyright {
+  width: 150px;
+  margin: 0;
+  margin-left: auto;
+
   text-align: center;
 }
 
