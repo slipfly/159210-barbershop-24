@@ -34,6 +34,13 @@ body {
   background-repeat: repeat;
 }
 
+.inner-page .main-header {
+  margin-bottom: 50px;
+  background-color: #000000;
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
 a {
   text-decoration: none;
 }
@@ -52,11 +59,25 @@ a {
   background-color: transparent;
 }
 
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+  /* Временно для сетки */
+  min-height: 70px;
+}
+
 .main-header-logo {
   order: 2;
 
   width: 368px;
   height: 153px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -91,6 +112,10 @@ a {
   list-style: none;
 
   min-height: 70px;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -213,10 +238,22 @@ a {
 .page-title {
   font-size: 30px;
   line-height: 42px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 42px;
 }
 
 .breadcrumbs {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+
+  /* Временно для сетки */
+  min-height: 24px;
 }
 
 .breadcrumbs a {
@@ -230,6 +267,18 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
+
+  /* Временно для сетки */
+  min-height: 687px;
 }
 
 .filter fieldset {
@@ -256,13 +305,35 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+
+  /* Временно для сетки */
+  min-height: 687px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
   list-style: none;
 }
 
 .catalog-item {
   background-color: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  /* Временно для сетки */
+  min-height: 285px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -296,7 +367,14 @@ a {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+
+
   list-style: none;
+
+  /* Временно для сетки */
+  min-height: 47px;
 }
 
 .pagination-item a {
@@ -336,6 +414,10 @@ a {
   background-image: url("../img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
 }
 
 .main-footer .container {
